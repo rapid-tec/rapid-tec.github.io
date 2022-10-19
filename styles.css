@@ -72,6 +72,13 @@ header nav li a:hover {
   opacity: .6;
 }
 
+.logo{
+  display: flex;
+  align-content:center;
+  justify-content:center;
+  max-height:100%;
+}
+
 header nav ul {
   font-size: 2vh;
   display: flex;
