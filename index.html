@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Rapid Technologies</title>
-  <link rel="shortcut icon" type = "imgage/ico" href="/img/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
@@ -18,7 +17,9 @@
 <body id="top">
   <header>
     <div class="logo">
-      <a id="rtlogo" href="#"><img src="img/rtlogo.png" alt="logo"></a>
+      <a id="rtlogo" href="#">
+        <img class="rtimg" src="img/rtlogo2.png" alt="logo">
+      </a>
     </div>
       <nav>
         <ul>
@@ -34,8 +35,10 @@
   </header>
   <div id="hero">
     <div class="background-image">  
-      <h1>Business and Agricultural IT Support in Fresno & Southern San Joaquin Valley</h1>
-      <h3>Protect your vital information systems with comprehensive technical support from Rapid Technologies</h3>
+      <div class="textcontainer">
+        <h1>Business and Agricultural IT Support in Fresno & Southern San Joaquin Valley</h1>
+        <h3>Protect your vital information systems with comprehensive technical support from Rapid Technologies</h3>
+      </div>
     </div>
   </div>
 <!--**************************** --->
@@ -53,8 +56,8 @@
     <hr>
   </div>
 <!--****************************-->
-<h3 id="services" class="title">Services</h3>
   <div id="gallery" class="photo-gallery">
+    <h3 id="services" class="title">Services</h3>
     <ul class="grid">
       <div class="grid">
         <li id="office" class="small">
@@ -90,38 +93,34 @@
    <hr>
   </div>
   <!--****************************-->
-  <h3 id="services" class="title">Our Team</h3>
-  <div id="teamgallery" class="photo-gallery">
+  <div id="teamgallery" class="">
+    <h3 class="title">Our Team</h3>
     <ul class="teamgrid">
       <div class="teamgrid teamdescript">
-        <h4 class="teamname">Team 1</h4>
-        <li id="team1" class="small">
-          <div  class="img_descript_wrapper">
-            <p class="img_description">Dingus</p>
+        <h4 class="teamname">Rich Lowe</h4>
+        <li id="team1" class="teamsmall">
+          <div  class="team_img_descript_wrapper">
           </div>
         </li>
       </div>
       <div class="teamgrid teamdescript">
-        <h4 class="teamname">Team 2</h4>
-        <li id="team2" class="small">
-          <div class="img_descript_wrapper">
-            <p class="img_description">Bingus</p>
+        <h4 class="teamname">Brian Najm</h4>
+        <li id="team2" class="teamsmall">
+          <div class="team_img_descript_wrapper">
           </div>
         </li>
       </div>
       <div class="teamgrid teamdescript">  
-        <h4 class="teamname">Team 3</h4>
-        <li id="team3" class="small">
-          <div class="img_descript_wrapper">
-            <p class="img_description">Mingus</p>
+        <h4 class="teamname">Grant Wilson</h4>
+        <li id="team3" class="teamsmall">
+          <div class="team_img_descript_wrapper">
           </div>
         </li>
       </div>
       <div class="teamgrid teamdescript">
-        <h4 class="teamname">Team 4</h4>  
-        <li id="team4" class="small">
-          <div class="img_descript_wrapper">
-            <p class="img_description">Pinguis</p>
+        <h4 class="teamname">Logan Jenson</h4>  
+        <li id="team4" class="teamsmall">
+          <div class="team_img_descript_wrapper">
           </div>
         </li>
       </div>
@@ -129,10 +128,23 @@
    <hr>
   </div>
   <!--****************************-->
-  <footer id="social">
-    <ul>
-      <h4 class="title">contact us</h4>
-      <li><a href="#"><i class = "fab fa-twitter-square"></i></a></li>
+  <footer id="contact">
+    <h4 class="title">contact us</h4>
+    <ul id="social">
+      <li class ="fbicon">
+        <a href="#">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512; height:10vh;" xml:space="preserve">
+            <style type="text/css">
+            .st0{fill:#395185;}
+            .st1{fill:#FFFFFF;}
+            </style>
+            <g>
+              <path class="st0" d="M483.7,512c15.6,0,28.3-12.7,28.3-28.3V28.3C512,12.7,499.3,0,483.7,0H28.3C12.6,0,0,12.7,0,28.3v455.5C0,499.3,12.6,512,28.3,512H483.7"/>
+              <path class="st1" d="M353.3,512V313.7h66.6l10-77.3h-76.5v-49.3c0-22.4,6.2-37.6,38.3-37.6l40.9,0V80.4c-7.1-0.9-31.4-3-59.6-3c-59,0-99.4,36-99.4,102.1v57h-66.7v77.3h66.7V512H353.3"/>
+            </g>
+          </svg>
+        </a>
+    </li>
       <li><a href="#"><i class = "fab fa-facebook-square"></i></a></li>
       <li><a href="#"><i class = "fab fa-youtube-square"></i></a></li>
       <li><a href="#"><i class = "fab fa-pinterest-square"></i></a></li>
