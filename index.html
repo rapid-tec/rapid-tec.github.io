@@ -1,136 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Rapid Technologies</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body id="top">
-  <header>
-    <div class="logo">
-      <a id="rtlogo" href="#">
-        <img class="rtimg" src="img/rtlogo2.png" alt="logo">
-      </a>
-    </div>
-      <nav>
-        <ul>
-          <li><a href="#top">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#our-team">Our Team</a></li>
-          <li><a href="#faqs">FAQ's</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#social-media">Links</a></li>
-        </ul>
+<body>
+    <nav class="navbar fixed-top navbar-expand">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Rapid Technologies</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="justify-content-end collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-  </header>
-  
-  <div id="hero">
-    <div class="background-image">  
-      <div class="textcontainer">
-        <h1>Business and Agricultural IT Support in Fresno & Southern San Joaquin Valley</h1>
-        <h3>Protect your vital information systems with comprehensive technical support from Rapid Technologies</h3>
-      </div>
-    </div>
-  </div>
-  <!--**************************** --->
-  <div id="about">
-    <h3 class="title">About Us</h3>
-    <div id="two-cols">
-      <div class="about-img"><img src="img/about.jpg" alt="thumbs up"></div>
-      <div class="about-us">
-        <p>
-          Since 2003, Rapid Technologies has been the IT solution for small to medium-sized businesses across central California. Our data-center is conveniently located in downtown Fresno right above one of California's high speed communication backbones. Various service locations exist to serve clients throughout the southern San Joaquin Valley.
-        </p>
-      </div>
-      <p>&nbsp;</p>
-    </div>
-    <hr>
-  </div>
 <!--****************************-->
-  <div id="gallery" class="photo-gallery">
-    <h3 id="services" class="title">Services</h3>
-    <ul class="grid">
-      <div class="grid">
-        <li id="office" class="small">
-          <div  class="img_descript_wrapper">
-            <p class="img_description">Microsoft Office</p>
+    <div class="container-expand-lg" id="hero">
+        <div class="">  
+          <div id="heroText" class="container text-center">
+            <h1>Business and Agricultural IT Support in Fresno & Southern San Joaquin Valley</h1>
+            <h3>Protect your vital information systems with comprehensive technical support from Rapid Technologies</h3>
           </div>
-        </li>
+        </div>
       </div>
-      <div class="grid">
-        <li id="networking" class="small">
-          <div class="img_descript_wrapper">
-            <p class="img_description">Networking</p>
+<!--****************************-->
+     <div class="container text-center" id="about">
+        <h3 class="title">About Us</h3>
+        <div id="two-cols">
+          <div class="about-img"><img src="img/about.jpg" alt="thumbs up"></div>
+          <div class="about-us">
+            <p>
+              Since 2003, Rapid Technologies has been the IT solution for small to medium-sized businesses across central California. Our data-center is conveniently located in downtown Fresno right above one of California's high speed communication backbones. Various service locations exist to serve clients throughout the southern San Joaquin Valley.
+            </p>
           </div>
-        </li>
+          <p>&nbsp;</p>
+        </div>
+        <hr>
       </div>
-    </ul>
-    <ul class="grid">
-      <div class="grid">  
-        <li id="helpdesk" class="small">
-          <div class="img_descript_wrapper">
-            <p class="img_description">General Helpdesk</p>
-          </div>
-        </li>
+<!--****************************-->
+    <div id="gallery" class="container text-center">
+      <h3 id="services" class="title">Services</h3>
+      <div class="row text-center">
+        <div class="col-md">
+            <div  class="img_descript_wrapper">
+                <img src="img/office-apps-med.jpg" class="img-thumbnail" alt="">
+                <p class="img_description">Microsoft Office</p>
+            </div>
+        </div>
+        <div id="networking" class="col-md serv">
+            <div class="img_descript_wrapper">
+                <img src="img/networking-med.jpg" alt="" class="img-thumbnail">
+                <p class="img_description">Networking</p>
+            </div>
+            </div>
+        </div>
+        <div class="row text-center"> 
+            <div class="col-md serv">  
+                <div class="img_descript_wrapper">
+                    <img src="img/dell-laptop-med.jpg" alt="" class="img-thumbnail">
+                    <p class="img_description">General Helpdesk</p>
+                </div>
+            </div>
+            <div class="col-md serv">  
+                <div class="img_descript_wrapper">
+                    <img src="img/servers-med.jpg" alt="" class="img-thumbnail">
+                    <p class="img_description">Hosting Services</p>
+                </div>
+            </div>
+        </div>
+      <hr>
+    </div>
+
+  <!--Group-->
+  <div id="teamgallery" class="container-fluid text-center">
+    <h3 class="title text-center">Our Team</h3>
+    <div class="row row-cols-4">
+      <div class="col teamdescript">
+          <h4 class="teamname">Rich Lowe</h4>
+          <img src="img/mk-glasses.png" alt="" class="group_img img-thumbnail">
       </div>
-      <div class="grid">  
-        <li id="hosting" class="small">
-          <div class="img_descript_wrapper">
-            <p class="img_description">Hosting Services</p>
-          </div>
-        </li>
+      <div class="col teamdescript">
+          <h4 class="teamname">Logan Jenson</h4>  
+          <img src="img/beetlejuice.png" alt="" class="group_img img-thumbnail"> 
       </div>
-    </ul>
+      <div class="col teamdescript">  
+          <h4 class="teamname">Grant Wilson</h4>
+          <img src="img/mk-mult.png" alt="" class="group_img img-thumbnail">
+      </div>
+      <div class="col teamdescript">
+          <h4 class="teamname">Brian Najm</h4>
+          <img src="img/mk-batman.png" alt="" class="group_img img-thumbnail">
+      </div>
+    </div>
    <hr>
   </div>
+
   <!--****************************-->
-  <div id="teamgallery" class="">
-    <h3 class="title">Our Team</h3>
-    <ul class="teamgrid">
-      <div class="teamgrid teamdescript">
-        <h4 class="teamname">Rich Lowe</h4>
-        <li id="team1" class="teamsmall">
-          <div  class="team_img_descript_wrapper">
-          </div>
-        </li>
-      </div>
-      <div class="teamgrid teamdescript">
-        <h4 class="teamname">Logan Jenson</h4>  
-        <li id="team4" class="teamsmall">
-          <div class="team_img_descript_wrapper">
-          </div>
-        </li>
-      </div>
-      <div class="teamgrid teamdescript">  
-        <h4 class="teamname">Grant Wilson</h4>
-        <li id="team3" class="teamsmall">
-          <div class="team_img_descript_wrapper">
-          </div>
-        </li>
-      </div>
-      <div class="teamgrid teamdescript">
-        <h4 class="teamname">Brian Najm</h4>
-        <li id="team2" class="teamsmall">
-          <div class="team_img_descript_wrapper">
-          </div>
-        </li>
-      </div>
-      
-    </ul>
-   <hr>
-  </div>
-  <!--****************************-->
-  <footer id="contact">
-    <div id="contactDiv">
+  <footer class="container-fluid text-center" id="contact">
+    <div class="container" id="contactDiv">
       <h3 class="title contactTitle">contact us</h3>
-      <div class="teleSocial">
-        <ul id="contactBar">
-          <li class ="fbook">
+      <div class="row teleSocial">
+          <div class ="col fbook">
             <a href="#">
               <svg class="fbico" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512; height:10vh;" xml:space="preserve">
                 <style type="text/css">
@@ -143,27 +134,27 @@
                 </g>
               </svg>
             </a>
-          </li>
-          <li class="email">
+          </div>
+          <div class="col email">
             <svg id="glyphicons-basic" class="emailico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
               <path id="envelope" d="M14.69305,17.707,3.986,7h24L17.27893,17.707a1.15255,1.15255,0,0,1-.70709.293H15.40015A1.15257,1.15257,0,0,1,14.69305,17.707ZM10.17169,16,4,9.82812V22.17188Zm11.65656,0L28,22.17188V9.82812Zm-3.428,3.41418A2.3055,2.3055,0,0,1,16.986,20H14.986a2.30474,2.30474,0,0,1-1.41424-.58594l-1.99988-2L3.986,25h24l-7.58581-7.58594Z"/>
             </svg>
-            <h4 class="contactText">support@rapid-tec.com</h4>
-          </li>
-          <li class="phone">
+            <h4 class="contactText">support@email.com</h4>
+          </div>
+          <div class="col phone">
             <a href="">
               <svg id="glyphicons-basic" class="phoneico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                 <path id="call" d="M27.01355,23.48859l-1.753,1.75305a5.001,5.001,0,0,1-5.19928,1.18243c-1.97193-.69372-4.87335-2.36438-8.43848-5.9295S6.387,14.028,5.6933,12.05615A5.00078,5.00078,0,0,1,6.87573,6.85687L8.62878,5.10376a1,1,0,0,1,1.41431.00012l2.828,2.8288A1,1,0,0,1,12.871,9.3468L11.0647,11.153a1.0038,1.0038,0,0,0-.0821,1.32171,40.74278,40.74278,0,0,0,4.07624,4.58374,40.74143,40.74143,0,0,0,4.58374,4.07623,1.00379,1.00379,0,0,0,1.32171-.08209l1.80622-1.80627a1,1,0,0,1,1.41412-.00012l2.8288,2.828A1.00007,1.00007,0,0,1,27.01355,23.48859Z"/>
               </svg>  
-              <h4 class="contactText">(559) 289-8021</h4>      
+              <h4 class="contactText">(559)555-5555</h4>      
             </a>
-          </li>
-        </ul>
+          </div>
       </div>
     </div>
   </footer>
-  
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-  <script src="js/script.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

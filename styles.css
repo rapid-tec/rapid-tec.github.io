@@ -1,517 +1,139 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 html{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  color: #555;
-  scroll-behavior:smooth;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #555;
+    scroll-behavior:smooth;
+    
+  }
+
+  h1, h2, h3, h4, h5, h6{
+    font-family: 'Raleway', sans-serif;
+  }
   
-}
+  .navbar{
+    background-color: rgba(166,112,30,.7);
+  }
 
-a{
-  color: white;
-}
+  hr{
+    width: 150px;
+    height: 2px;
+    background-color: #2196f3;
+    border: 0;
+    margin: 40px auto;
+  }
 
-ul{
-  list-style: none;
-}
+  #hero{
+    background: gray;
+    background-repeat: no-repeat;    
+    background-image: url('img/agriculture.jpg');
+    background-size: cover;
+    min-height: 90vh;
+    width:100%;
+  }
 
-h1, h2, h3, h4, h5, h6{
-  font-family: 'Raleway', sans-serif;
-}
-
-#top{
-  top:10%;
-}
-
-.title{
-  color: #131633;
-  text-transform: capitalize;
-  font-size: 40px;
-  margin: 35px 35px;
-  text-align: center;
-}
-
-hr{
-  width: 150px;
-  height: 2px;
-  background-color: #2196f3;
-  border: 0;
-  margin: 40px auto;
-}
-
-
-
-/*--Header--*/
-
-
-header{
-  background-color: rgba(166,112,30,.7);
-  position: sticky;
-  max-height: 10%;
-  top: 0;
-  left: 0;
+  #heroText{
+    padding-top:25vh;
+  }
+  
+  .background-image{
+  background-repeat:no-repeat;
+  background-image: url('img/agriculture.jpg');
+  background-size: cover;
+  min-height: 90vh;
   width: 100%;
-  color: #fff;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  z-index: 3;
-}
-
-
-header a {
-  text-decoration: none;
-  color: white;
-  opacity: 1;
-  cursor: pointer;
-  text-shadow:1px 1px #000;
-}
-
-header nav li a:hover {
-  opacity: .6;
-}
-
-#rtlogo{
-  max-width:100%;
-  height:auto;
-}
-
-.rtimg{
-  margin-top:2%;
-}
-
-.logo{
-  display: flex;
-  align-content:center;
-  justify-content:center;
-}
-
-header nav ul {
-  font-size: 2vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-header nav li {
-  margin: 0 6px;
-}
-header nav li:first-child {
-  margin-left: 0;
-}
-header nav li:last-child {
-  margin-right: 0;
-}
-@media(max-width:1000px) {
-  header {
-    text-align: center;
-    flex-direction: column;
-    padding: 20px 50px;
   }
- 
-  header nav {
-    justify-content: space-around;
-  }
-  header h2 {
-    margin-bottom: 15px;
-  }
-  #rtlogo {
-   max-width: 50%; 
-  }
-}
 
-/*---Hero---*/
-
-
-#hero{
-  background: gray;
-  color: white;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-repeat: no-repeat;
- 
-  
-}
-
-.background-image{
-background-image: url('img/agriculture.jpg');
-background-size: cover;
-min-height: 100vh;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-width: 100%;
-}
-
-.textcontainer{
-  margin-bottom:20vh;
-}
-
-#hero h1 {
-  font-size: 60px;
-  color: rgba(33,150,243,.9);
-  text-shadow: 1px 1px #000;
-  margin-bottom: 40px;
-}
-
-#hero h3{
-  color:rgb(65,157,232);
-  font-size: 36px;
-  text-shadow: 1px,1px #000;
-}
-
-@media(max-width:800px) {
-  #hero {
-    min-height: 600px;
-  }
   #hero h1 {
+    font-size: 60px;
+    color: rgba(33,150,243,.9);
+    text-shadow: 1px 1px #000;
+    margin-bottom: 40px;
+  }
+
+  #hero h3{
+    color:rgb(65,157,232);
     font-size: 36px;
-  }
-  #hero h3 {
-    font-size: 18px;
-  }
-  #hero a.btn {
-    padding: 15px 40px;
-  }
-}
-
-
-  /*-----About-----*/
-
-  #about{
-    padding: 10px;
-    background-color: rgb(245,243,240);
-    margin-bottom: 20px;
+    text-shadow: 1px,1px #000;
   }
 
- #two-cols{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  .about-img{
+    border: 4px solid #2196f3;
+    background-color: #2196f3;
   }
 
- .about-img{
-   border: 4px solid #2196f3;
-   background-color: #2196f3;
- }
 
-  .about-us{
-    width: 70%;
-    max-width: 800px;
-    line-height: 2;
-    margin-left: 20px;
-    font-size:24px;
+  #gallery{
+    z-index:0;
   }
 
-  @media(max-width:600px) {
-    #about #two-cols{
-      flex-direction: column;
-    }
-
-    .about-us{
-      margin-top: 20px;
-      line-height: 1.5;
-      text-align: left;
-    }
+  .serv{
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
   }
-/*--Services--*/
 
-#gallery {
-  background-color: rgb(255, 255, 255);
-  padding: 1% 1%;
-}
+  .img_description{
+    z-index:1;
+  }
 
-#gallery .grid li {
-  padding: 20px;
-  height: 350px;
-  border-radius: 3vh;
-  background-clip: content-box;
-  background-size: cover;
-  background-position: center;
-  background-color: #333;
-}
+  #teamgallery{
+    margin-top:5vh;
+  }
 
-/*
-#gallery p {
-  max-width: 800px;
-  text-align: center;
-  margin: 0 auto 35px;
-  padding: 0 20px;
-  line-height: 2;
-}
-*/
-#gallery ul.grid {
-  width: auto;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-}
-
-#gallery div.grid{
-  width:100%;
-  display:flex;
-  justify-content:center;
-}
-
- #gallery .grid li.small {
-   flex-basis: 80%;
-   display:flex;
-   align-items:center;
-   flex-direction:column;
-   justify-content:center;
-   transition: transform 0.5s;
- }
-
- .small:hover{
-  transform: scale(.95);
- }
-
- .img_description {
-  color:rgb(255,255,255);
-  font-size: 32px;
-  font-weight:500;
-  text-shadow: 1px 1px rgb(0,0,0);
-  visibility:hidden;
-  opacity: 0;
-  transition: opacity .3s, visibility .3s;
- }
-
- .img_descript_wrapper{
-  display:flex;
-  align-items:center;
-  flex-direction:column;
-  justify-content:center;
-  width:100%;
-  height:100%;
-  border-radius:1vh;
-  border:4px solid rgba(33,150,243,.9);
- }
-
- .img_descript_wrapper:hover .img_description{
-  visibility: visible;
-  opacity: 2;
- }
-
- #office{
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("img/office-apps-med.jpg");
- }
-
-
- #networking{
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("img/networking-med.jpg");
- }
-
- #helpdesk{
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("img/dell-laptop-med.jpg");
- }
-
- #hosting{
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("img/servers-med.jpg");
- }
-
-
- /*-- Our Team --*/
-
- #teamgallery {
-  background-color: rgb(245,243,240);
-  padding: 1% 1%;
-}
-
-#teamgallery .teamgrid li {
-  padding: 20px;
-  height: 350px;
-  border-radius: 4vh;
-  background-clip: content-box;
-  background-size: cover;
-  background-position: center;
-  background-color: #333;
-}
-
-#teamgallery ul.teamgrid {
-  width: auto;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-}
-
-.teamname{
-  font-size:32px;
-  color:rgb(0,0,0);
-}
-
-#teamgallery div.teamgrid{
-  width:100%;
-  flex-direction:column;
-  display:flex;
-  justify-content:center;
-}
-
- #teamgallery .teamgrid li.teamsmall {
-  width:100%;
-   display:flex;
-   align-items:center;
-   justify-content:center;
-   transition: transform 0.5s;
- }
-
- .teamdescript{
-  transition: transform 0.5s;
- }
-
- .teamdescript:hover{
-  transform: scale(1.04);
- }
-
- .img_description {
-  color:rgb(255,255,255);
-  font-size: 32px;
-  font-weight:500;
-  text-shadow: 1px 1px rgb(0,0,0);
-  visibility:hidden;
-  opacity: 0;
-  transition: opacity .3s, visibility .3s;
- }
-
- .team_img_descript_wrapper{
-  display:flex;
-  align-items:center;
-  flex-direction:column;
-  justify-content:center;
-  width:100%;
-  height:100%;
-  border-radius: 2vh;
-  border:4px solid rgba(33,150,243,.9);
- }
-
- .img_descript_wrapper:hover .img_description{
-  visibility: visible;
-  opacity: 2;
- }
-
- 
- #team1{
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("img/mk-glasses.png");
-  background-size:fill;
- }
-
-
- #team2{
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("img/mk-batman.png");
-  background-size:fill;
- }
-
- #team3{
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("img/mk-mult.png");
-  background-size:fill;
- }
-
- #team4{
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("img/beetlejuice.png");
-  background-size:fill;
- }
-
-.teamdescript{
-  align-items: center;
-}
-
-
- @media(max-width: 1000px) {
-   #gallery .grid li.small,
-   #gallery .grid li.large{
-     flex-basis: 100%;
-   }
- }
-
-/*--Contact--
-section.flexbox-section {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-section.flexbox-section p {
-  max-width: 900px;
-  text-align: center;
-  margin-bottom: 35px;
-  padding: 0 20px;
-  line-height: 1.5;
-}
-*/
-
+  
 /*--Footer--*/
 
 #contactBar{
-  display:flex;
-  align-items: center;
-  justify-content: space-around;
-  color:#000;
-  text-align: center;
-  padding: 40px 0;
-}
-
-.teleSocial{
-  width:100%;
-}
-
-.contactText{
-  font-size:36px;
-}
-
-.emailico{
-  max-height: 150px;
-}
-
-.phoneico{
-  max-height: 150px;
-}
-
-.fbico{
-  max-height: 150px;
-}
-
-footer p{
-  text-transform: uppercase;
-  font-size: 14px;
-  color: rgba(0,0,0, .6);
-  margin-bottom: 10px;
-
-}
-
-footer svg{
- fill: rgb(0,88,161);
-}
-
-footer h4{
-  color: rgb(0,0,0);
-}
-
-footer ul{
-  margin-bottom: 25px;
-}
-
-footer ul li{
-  margin: 0 8px;
-}
-
-footer ul li a{
-  font-size: 36px;
-  cursor: pointer;
-}
-
-
-@media(max-width: 800px){
-  footer{
-    padding: 80px 15px;
+    color:#000;
   }
-}
+  
+  .teleSocial{
+    width:100%;
+  }
+  
+  .contactText{
+    font-size:36px;
+  }
+  
+  .emailico{
+    max-height: 150px;
+  }
+  
+  .phoneico{
+    max-height: 150px;
+  }
+  
+  .fbico{
+    max-height: 150px;
+  }
+  
+  footer p{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgba(0,0,0, .6);
+    margin-bottom: 10px;
+  
+  }
+  
+  footer svg{
+   fill: rgb(0,88,161);
+  }
+  
+  footer h4{
+    color: rgb(0,0,0);
+  }
+  
+  footer ul{
+    margin-bottom: 25px;
+  }
+  
+  footer ul li{
+    margin: 0 8px;
+  }
+  
+  footer ul li a{
+    font-size: 36px;
+    cursor: pointer;
+  }
+  
+  
