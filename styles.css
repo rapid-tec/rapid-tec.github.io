@@ -12,8 +12,9 @@ html{
   
   .navbar{
     background-color: rgba(166,112,30,.7);
+    
   }
-
+  
   hr{
     width: 150px;
     height: 2px;
@@ -32,19 +33,18 @@ html{
   }
 
   #heroText{
-    padding-top:25vh;
+    padding-top:15vh;
   }
   
-  .background-image{
+  /*.background-image{
   background-repeat:no-repeat;
   background-image: url('img/agriculture.jpg');
   background-size: cover;
   min-height: 90vh;
   width: 100%;
-  }
+  }*/
 
   #hero h1 {
-    font-size: 60px;
     color: rgba(33,150,243,.9);
     text-shadow: 1px 1px #000;
     margin-bottom: 40px;
@@ -52,7 +52,6 @@ html{
 
   #hero h3{
     color:rgb(65,157,232);
-    font-size: 36px;
     text-shadow: 1px,1px #000;
   }
 
